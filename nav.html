@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+.relative{
+	position: relative;
+}
+
+.thorn{
+	position: absolute;
+	top:46px;
+	right: 0px;
+	z-index: 1;
+	height: 9px;
+	width: 8px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  width: auto;
+}
+.navbar-brand {
+  height: 100px;
+}
+
+
+
+.nav >li >a {
+  padding-top: 77px;
+ padding-bottom: 10px;
+ padding-left: 8px;
+ height: 100px;
+ width: 100px;
+ background-repeat: no-repeat;
+ background-position: 37px 30px;
+
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-family: 'Noto Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.nav >li:hover{
+	background-color: #8f8f8f;
+}
+
+
+
+
+
+
+.nav >li:nth-child(1) >a{
+	 background-image: url(screenshots/home.png);
+	 background-color: #decc00;
+
+}
+
+.nav >li:nth-child(2) >a{
+	 background-image: url(screenshots/about.png);
+	 background-color: #71d9e2;
+
+}
+
+.nav >li:nth-child(3) >a{
+	 background-image: url(screenshots/services.png);
+	 background-color: #59c8d2;
+
+}
+.nav >li:nth-child(4) >a{
+	 background-image: url(screenshots/portfolio.png);
+	 background-color: #39b8c3;
+
+}
+.nav >li:nth-child(5) >a{
+	 background-image: url(screenshots/blog.png);
+	 background-color: #16a7b4;
+
+}
+.nav >li:nth-child(6) >a{
+	 background-image: url(screenshots/contact.png);
+	 background-color: #0c9aa7;
+
+}
+
+
+
+.navbar-collapse{
+	padding: 0px;
+}
+
+
+
+.navbar-inverse {
+    background-color: #333333;
+    border-top: 0px;
+    border-bottom: 1px solid #b9b9b9;
+    border-radius: 0px;
+}
+
+
+
+.navbar-inverse .dropdown-menu li > a{
+	color: white;
+	line-height: 45px;
+	font-size: 12px;
+	font-family: 'Noto Sans', sans-serif;
+	padding-left: 13px;
+}
+
+.navbar-inverse.dropdown-menu li{
+	height: 45px;
+	width: 150px;
+}
+
+.navbar-inverse .dropdown-menu li:nth-child(1){
+	background-color: #59c8d2;
+}
+.navbar-inverse .dropdown-menu li:nth-child(2){
+	background-color: #39b8c3;
+}
+.navbar-inverse .dropdown-menu li:nth-child(3){
+	background-color: #16a7b4;
+}
+
+.navbar-inverse .dropdown-menu li > a:nth-child(1):hover , .navbar-inverse .dropdown-menu li > a:nth-child(2):hover, .navbar-inverse .dropdown-menu li > a:nth-child(3):hover{
+	background-color: #333333;
+}
+
+
+.navbar-inverse > .container > .navbar-collapse {
+    	float: right;
+  }
+
+
+  @media screen and (max-width: 992px) {
+    .navbar-inverse > .container > .navbar-collapse {
+    	float: none;
+
+    }
+
+    .navbar-brand>img {
+    	padding-left: 15px;
+    }
+ }
+
+
+@media screen and (min-width: 768px) {
+    .dropdown-menu {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+
+}
+@media screen and (max-width: 767px) {
+    .navbar-inverse > .container > .navbar-collapse {
+padding-left: 30px;
+padding-right: 30px;
+overflow: hidden;
+ }
+
+ .nav >li >a{
+ 	width: 100%;
+ }
+
+ .thorn{
+		display: none;
+	}
+
+	
+
+.dropdown-menu>li>a {
+  color: #ffffff !important;
+ 
+}
+.dropdown-menu>li>a:hover {
+  color: #333333 !important;
+  
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  		<div class="container">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+
+       			<a class="navbar-brand" href="#">
+       				<img src="screenshots/logo.png">
+        		</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar" >
+      			<ul class="nav navbar-nav">
+        			<li class="relative">
+        				<a href="#">Home</a>
+
+        				<img class="thorn" src="screenshots/spine-about.png">
+					</li>
+         			<li class="relative">
+         				<a href="#">About</a>
+
+         				<img class="thorn" src="screenshots/spine-services.png">
+         			</li>
+        			<li class="relative" class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Services </a>
+          				
+          				<ul class="dropdown-menu">
+            				<li>
+            					<a href="#">Public relations</a>
+            				</li>
+            				<li>
+            					<a href="#">Web design</a>
+            				</li>
+           					<li>
+           						<a href="#">Customization</a>
+           					</li>
+          				</ul>
+          				
+          				<img class="thorn" src="screenshots/spine-portfolio.png">
+       				</li>
+        			<li class="relative">
+        				<a href="#">Portfolio</a>
+
+        				<img class="thorn" src="screenshots/spine-blog.png">
+        			</li>
+        			<li class="relative">
+        				<a href="#">Blog</a>
+
+        				<img class="thorn" src="screenshots/spine-contact.png">
+        			</li>
+        			<li class="relative">	
+        				<a href="#">Contact</a>
+        			</li>
+     			</ul>
+     
+    		</div>
+  		</div>
+	</nav>
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+
+</html>
